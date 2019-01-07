@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8"> 
+		<title>ATV02_form1_JosePauloJunior_2012204304</title>
+<style>
+
+input{
+	margin-bottom:5px;
+}
+
+
+</style>		
+</head>
+<body>
+
+<h1 style="text-align: center" >Enter Contact Information</h1>
+<form>
+	<p style="text-align: right">Search:
+	<input type="search" name="Search" value=""><br></p>
+	Name:
+	<input type="text" required="required" name="Name" value="" placeholder="Enter your name" style="margin-left:100px"><br>
+	E-Mail:
+	<input type="email" name="Email" value="" style="margin-left:93px"><br>
+	Phone:
+	<input type="tel" name="Tel" value="" style="margin-left:98px"><br>	
+	Website:
+	<input type="url" name="URL" value="" style="margin-left:87px"><br>
+	Birthdate:<!--Feito em Firefox que não redenriza a tag date-->
+	<input type="date" name="bday" value="" style="margin-left:78px"><br>
+	Quantity Attending:
+	<input type="number" name="QTD" value="" style="margin-left:13px"><br>
+	Pattern:
+	<input type="text" pattern="[0-9]{6}" name="Pattern"  value="123456" style="margin-left:91px"><br>
+	Range:
+	<input type="range" name="Range" min="0" max="100" style="margin-left:100px"><br>
+	Hair color:
+	<input type="color" name="Color" value="" style="margin-left:70px"><br>
+	Select photo images:
+	<input type="file" name="File" multiple style="margin-left:5px"><br>
+	<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

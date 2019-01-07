@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATV02_form4_JosePauloJunior_2012204304</title>
+	<meta charset="UTF-8">
+<style>
+
+input{
+	margin-bottom: 5px;
+}
+p{
+	text-align: right;
+	font-size: 14pt; 
+	line-height: 10px;
+}
+</style>
+</head>
+<body>
+	<div  style="width: 45%; position: absolute; top: 0px">
+		<br>
+		<p>Title </p>
+		<p>Name </p>
+		<p>Phone number </p>
+		<p>Email address </p>
+		<p>Your website </p>
+		<p>Nr of itens order </p>
+		<p>Lenght </p>
+		<p>Delivery date </p>
+		<p>Time of delivery </p>
+		<p>Color of the item </p>
+	</div>
+	<div style="width: 54%; position: absolute; top: 0px; right: 0px">
+	<br>
+	<br>
+		<form>
+			<input type="text" name="Title" placeholder="Select one of enter your own" required="required"><br>
+			<input type="text" required="required" name="Name" placeholder="John Doe"><br>
+			<input type="tel" name="Phone" placeholder="+1 23456789">(optional)<br>
+			<input type="email" name="Email" required value="add@sdgdsd"><br>
+			<input type="url" name="URL" placeholder="http://www.yoursite.com">(optional)<br>
+			<input type="number" required="required" name="Number" value="6" min="1" max="10">(1-10)<br>
+			<input type="range" name="lenght" min="1" max="10" value="3">1m (in 10cm increments)<br>
+			<input type="date" name="Data" required="required">(Minimum 16 December 2010)<br>
+			<input type="text" name="hora" required="required" value="21:00">(in 30 min increments)<br>
+			<input type="text" name="Color" pattern="[#,0-9,a-f,A-F]{7}" required="required" value="#ed1c24">(default red)<br>
+			<input type="submit" name="Submit" value="Submit"><br><br>
+		</form>
+
+
+	</div>
+
+	<div  style="width: 45%; position: absolute; bottom:40%;">
+	<p>Search</p>
+	</div>
+		
+	<div style="width: 54%; position: absolute; bottom:40%; right: 0px">
+		<input type="search" name="Search" value=""><input type="submit" name="Submit" value="GO">
+	</div>
+</body>
+</html>

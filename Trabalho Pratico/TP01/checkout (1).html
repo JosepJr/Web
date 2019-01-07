@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EletroWeb-Shop</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- CSS inline -->
+    <style>
+        .checkout{
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 20px;
+            line-height: inherit;
+            color: #333;
+            border: 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="institucional.html">Institucional</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand" href="faleconosco.html">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html">Carrinho de Compras</a>
+                    </li>
+                     <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="jumbotron jumbotron-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <h1 class="h1" style="color:#337ab7;">
+                            Confirme seus dados<br>
+                             <small style="color:#337ab7;">É importante a confirmação dos seus dados para que a compra possa ser finalizada.
+                            </small>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form action="checkout.php" method="post">
+                <div class="col-md-8">
+                    <div class="well well-sm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <p class="checkout"><span style="color:#337ab7;">1.</span>
+                                    Dados de entrega</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">
+                                        Nome</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">
+                                        Telefone</label>
+                                    <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" pattern="\d{11}" title="digite somente os numeros, conforme o exemplo: 2835528915" maxlength="11" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="endereço">
+                                        Endereço</label>
+                                    <input type="text" class="form-control" id="endereço" placeholder="Digite seu endereço" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cidade">
+                                        Cidade</label>
+                                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="estado">
+                                        Estado</label>
+                                    <select id="estado" name="estado" class="form-control" required>
+                                        <option value="" selected hidden="hidden">Selecione o estado</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiáis</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cep">
+                                        CEP</label>
+                                    <input type="tel" class="form-control" id="cep" placeholder="Digite seu CEP" pattern="\d{5}[\-]\d{3}" title="Digite seu CEP utilizando o traço: 00000-000" maxlength="9" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <p class="checkout"><span style="color:#337ab7;">2.</span>
+                                    Forma de envio</p>
+                                </div>
+                                <div class="form-group">
+								    <input type="radio" value="1" name="modoenvio" id="envio1" required>
+								    <label>SEDEX</label>
+								</div>
+                                <div class="form-group">
+								    <input type="radio" value="2" name="modoenvio" id="envio2" required>
+								    <label>PAC</label>
+								</div>
+                                <div class="form-group">
+                                    <p class="checkout"><span style="color:#337ab7;">3.</span>
+                                    Forma de pagamento</p>
+                                </div>
+                                <div class="form-group">
+								    <input type="radio" value="1" name="pagamento" id="pagamento1" required>
+								    <label>Cartão de credito</label>
+								</div>
+                                <div class="form-group">
+								    <input type="radio" value="2" name="pagamento" id="pagamento2" required>
+								    <label>Boleto bancário</label>
+								</div>
+                                <div class="form-group">
+								    <input type="radio" value="3" name="pagamento" id="pagamento3" required>
+								    <label>Debito em conta</label>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="form-group">
+                            <p class="checkout"><span style="color:#337ab7;">4.</span>
+                            Confirme o produto</p>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="form-group">
+                                <img src="imagem/eletronicos.png" alt="foto do produto">
+                            </div>
+                            <div class="caption">
+                                <div class="form-group">
+                                    <div style="width:50%; float:left;">
+                                        <label>Produto</label>
+                                    </div>
+                                    <div style="width:50%; float:left;">
+                                        <label>1000,00R$</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div style="width:50%; float:left;">
+                                        <label>Frete</label>
+                                    </div>
+                                    <div style="width:50%; float:left;">
+                                        <label>20,00R$</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>.......................................................................................</label>
+                                </div>
+                                <div class="form-group">
+                                    <div style="width:50%; float:left;">
+                                        <label>Total</label>
+                                    </div>
+                                    <div style="width:50%; float:left;">
+                                        <label>1020,00R$</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnEnviar">
+                            Enviar Mensagem</button>
+                        </div>
+                </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Simone Dornelas &copy; Fundamentos de Programação Web</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
